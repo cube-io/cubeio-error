@@ -1,0 +1,36 @@
+{
+  "name": "cubeio-error",
+  "version": "1.0.0",
+  "description": "CubeIO flavoured errors",
+  "main": "index.js",
+  "engines": {
+    "node": "^6.3.1"
+  },
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "http://npm.cubeio.net"
+  },
+  "author": "CubeIO A/S <devs@cubeio.com> (https://cubeio.com)",
+  "contributors": [],
+  "homepage": "https://github.com/cube-io/cubeio-error",
+  "repository": "github:cube-io/cubeio-error",
+  "bugs": {
+    "url": "https://github.com/cube-io/cubeio-error/issues",
+    "email": "devs@cubeio.com"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/jasmine",
+    "cover": "node_modules/.bin/istanbul cover --include-all-sources -x **/spec/** -x **/features/** node_modules/.bin/jasmine",
+    "clean": "rm -rf coverage/ node_modules/ npm_debug.log"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "istanbul": "0.4.4",
+    "jasmine": "2.4.1"
+  },
+  "files": [
+    "lib/",
+    "index.js"
+  ]
+}
