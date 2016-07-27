@@ -49,7 +49,7 @@ describe("UnauthorizedError", function() {
         expect(ce instanceof CubeIoError).toBeTruthy();
     });
 
-    it("is of type InternalError", function() {
+    it("is of type UnauthorizedError", function() {
         var ce = new UnauthorizedError();
         expect(ce instanceof UnauthorizedError).toBeTruthy();
     });
