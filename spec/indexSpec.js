@@ -30,4 +30,9 @@ describe("index", () => {
         expect(index.Unauthorized).toEqual(jasmine.any(Function));
         expect(index.Unauthorized).not.toThrow();
     });
+
+    it("exposes ForbiddenError", () => {
+        expect(index.Forbidden).toEqual(jasmine.any(Function));
+        expect(index.Forbidden).not.toThrow();
+    });
 });
