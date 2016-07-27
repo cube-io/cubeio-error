@@ -4,5 +4,6 @@ module.exports = {
     InvalidArgument: require("./lib/InvalidArgumentError.js"),
     MissingArgument: require("./lib/MissingArgumentError.js"),
     Unauthorized: require("./lib/UnauthorizedError.js"),
+    Forbidden: require("./lib/ForbiddenError.js"),
     Internal: require("./lib/InternalError.js")
 };
