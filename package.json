@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "node_modules/.bin/jasmine",
-    "cover": "node_modules/.bin/istanbul cover --include-all-sources -x **/spec/** -x **/features/** node_modules/.bin/jasmine",
+    "cover": "node_modules/.bin/istanbul cover --include-all-sources -x **/spec/** -x **/features/** node_modules/jasmine/bin/jasmine.js; node_modules/.bin/istanbul report cobertura",
     "clean": "rm -rf coverage/ node_modules/ npm_debug.log"
   },
   "dependencies": {
