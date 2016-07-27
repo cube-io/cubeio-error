@@ -64,8 +64,12 @@ We currently support these errors:
   `invalidArgumentValue`.
 
 - `Unauthorized(message, error)`:
-  Can be used to indicate that authorization has failed. A message can be
+  Can be used to indicate that authentication has failed. A message can be
   included to provide a reason as to what will happen as a consequence.
+
+- `Forbidden(message, error)`:
+  Can be used to indicate that the authentication is fine, and we know what
+  entity is acting, but the action is forbidden for the authenticated user.
 
 - `Internal(message, error)`:
   Used when an error happens, which can't be recognized as any other error type.
