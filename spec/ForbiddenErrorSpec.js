@@ -49,7 +49,7 @@ describe("ForbiddenError", function() {
         expect(ce instanceof CubeIoError).toBeTruthy();
     });
 
-    it("is of type InternalError", function() {
+    it("is of type ForbiddenError", function() {
         var ce = new ForbiddenError();
         expect(ce instanceof ForbiddenError).toBeTruthy();
     });

@@ -49,7 +49,7 @@ describe("NotFoundError", function() {
         expect(ce instanceof CubeIoError).toBeTruthy();
     });
 
-    it("is of type InternalError", function() {
+    it("is of type NotFoundError", function() {
         var ce = new NotFoundError();
         expect(ce instanceof NotFoundError).toBeTruthy();
     });
