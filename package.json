@@ -1,6 +1,6 @@
 {
   "name": "cubeio-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CubeIO flavoured errors",
   "main": "index.js",
   "engines": {
@@ -23,8 +23,7 @@
     "cover": "node_modules/.bin/istanbul cover --include-all-sources -x **/spec/** -x **/features/** node_modules/jasmine/bin/jasmine.js; node_modules/.bin/istanbul report cobertura",
     "clean": "rm -rf coverage/ node_modules/ npm_debug.log"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "istanbul": "0.4.4",
     "jasmine": "2.4.1"
