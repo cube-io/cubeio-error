@@ -1,6 +1,11 @@
 var index = require("../index.js");
 
 describe("index", () => {
+    it("exposes CubeIoError", () => {
+        expect(index.Error).toEqual(jasmine.any(Function));
+        expect(index.Error).not.toThrow();
+    });
+
     it("exposes ConflictError", () => {
         expect(index.Conflict).toEqual(jasmine.any(Function));
         expect(index.Conflict).not.toThrow();

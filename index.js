@@ -1,4 +1,5 @@
 module.exports = {
+    Error: require("./lib/CubeIoError.js"),
     NotFound: require("./lib/NotFoundError.js"),
     Conflict: require("./lib/ConflictError.js"),
     InvalidArgument: require("./lib/InvalidArgumentError.js"),
